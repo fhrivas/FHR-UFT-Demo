@@ -1,0 +1,82 @@
+<?xml-stylesheet href="..//StServiceCallActivity.xsl" type="text/xsl"?><report><VTD_Type name="Type">HP.ST.Ext.WebServicesActivities.StServiceCallActivity</VTD_Type><VTD_Name name="Step ID">StServiceCallActivity4</VTD_Name><InputXml name="InputXml" xml="True" link="True" FileLocation="StServiceCallActivity4_InputXml_8f133507-fd27-477f-9a05-94d0f84b5b10.xml">&lt;Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/"&gt;
+  &lt;Body&gt;
+    &lt;GetFlights xmlns="HP.SOAQ.SampleApp"&gt;
+      &lt;DepartureCity&gt;Frankfurt&lt;/DepartureCity&gt;
+      &lt;ArrivalCity&gt;Paris&lt;/ArrivalCity&gt;
+      &lt;FlightDate&gt;2020-05-15T00:00:00-06:00&lt;/FlightDate&gt;
+    &lt;/GetFlights&gt;
+  &lt;/Body&gt;
+&lt;/Envelope&gt;</InputXml><Service name="Service">Flights_Service</Service><Port name="Port">FlightsServiceMethods</Port><Operation name="Operation">GetFlights</Operation><Address name="Address">http://localhost:8000/Flights_SOAP</Address><SOAPAction name="SOAPAction">HP.SOAQ.SampleApp/IFlightsSoapService/GetFlights</SOAPAction><ContentType name="ContentType">text/xml; charset=utf-8</ContentType><MessageExchangePattern name="MessageExchangePattern">Request Response</MessageExchangePattern><Full_request name="Full request" TooLong="True" link="True" FileLocation="StServiceCallActivity4_Full_request_6c368ff1-c3bd-4d98-a129-581257224b40.xml">&lt;Envelope xmlns="htt ... &lt;/Body&gt;
+&lt;/Envelope&gt;</Full_request><InputHeader name="InputHeader">SOAPAction:	HP.SOAQ.SampleApp/IFlightsSoapService/GetFlights
+Content-Type:	text/xml; charset=utf-8
+Host:	localhost:8000
+Content-Length:	303
+Expect:	100-continue
+Connection:	Close
+</InputHeader><OutputHeader name="OutputHeader">Connection:	close
+Content-Length:	1676
+Content-Type:	text/xml; charset=utf-8
+Date:	Fri, 15 May 2020 20:26:49 GMT
+Server:	Microsoft-HTTPAPI/2.0
+</OutputHeader><OutputText name="OutputText">&lt;s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"&gt;&lt;s:Body&gt;&lt;GetFlightsResponse xmlns="HP.SOAQ.SampleApp"&gt;&lt;GetFlightsResult xmlns:i="http://www.w3.org/2001/XMLSchema-instance"&gt;&lt;Flight&gt;&lt;Airline&gt;NW&lt;/Airline&gt;&lt;ArrivalCity&gt;Paris&lt;/ArrivalCity&gt;&lt;ArrivalTime&gt;12:41 PM&lt;/ArrivalTime&gt;&lt;DepartureCity&gt;Frankfurt&lt;/DepartureCity&gt;&lt;DepartureTime&gt;10:46 AM&lt;/DepartureTime&gt;&lt;FlightNumber&gt;10638&lt;/FlightNumber&gt;&lt;Price&gt;155.2&lt;/Price&gt;&lt;/Flight&gt;&lt;Flight&gt;&lt;Airline&gt;NW&lt;/Airline&gt;&lt;ArrivalCity&gt;Paris&lt;/ArrivalCity&gt;&lt;ArrivalTime&gt;03:05 PM&lt;/ArrivalTime&gt;&lt;DepartureCity&gt;Frankfurt&lt;/DepartureCity&gt;&lt;DepartureTime&gt;01:10 PM&lt;/DepartureTime&gt;&lt;FlightNumber&gt;13450&lt;/FlightNumber&gt;&lt;Price&gt;148.4&lt;/Price&gt;&lt;/Flight&gt;&lt;Flight&gt;&lt;Airline&gt;SR&lt;/Airline&gt;&lt;ArrivalCity&gt;Paris&lt;/ArrivalCity&gt;&lt;ArrivalTime&gt;11:30 AM&lt;/ArrivalTime&gt;&lt;DepartureCity&gt;Frankfurt&lt;/DepartureCity&gt;&lt;DepartureTime&gt;08:00 AM&lt;/DepartureTime&gt;&lt;FlightNumber&gt;13534&lt;/FlightNumber&gt;&lt;Price&gt;159.9&lt;/Price&gt;&lt;/Flight&gt;&lt;Flight&gt;&lt;Airline&gt;SR&lt;/Airline&gt;&lt;ArrivalCity&gt;Paris&lt;/ArrivalCity&gt;&lt;ArrivalTime&gt;01:54 PM&lt;/ArrivalTime&gt;&lt;DepartureCity&gt;Frankfurt&lt;/DepartureCity&gt;&lt;DepartureTime&gt;10:24 AM&lt;/DepartureTime&gt;&lt;FlightNumber&gt;13538&lt;/FlightNumber&gt;&lt;Price&gt;161&lt;/Price&gt;&lt;/Flight&gt;&lt;Flight&gt;&lt;Airline&gt;SR&lt;/Airline&gt;&lt;ArrivalCity&gt;Paris&lt;/ArrivalCity&gt;&lt;ArrivalTime&gt;04:18 PM&lt;/ArrivalTime&gt;&lt;DepartureCity&gt;Frankfurt&lt;/DepartureCity&gt;&lt;DepartureTime&gt;12:48 PM&lt;/DepartureTime&gt;&lt;FlightNumber&gt;13542&lt;/FlightNumber&gt;&lt;Price&gt;168.4&lt;/Price&gt;&lt;/Flight&gt;&lt;Flight&gt;&lt;Airline&gt;SR&lt;/Airline&gt;&lt;ArrivalCity&gt;Paris&lt;/ArrivalCity&gt;&lt;ArrivalTime&gt;06:42 PM&lt;/ArrivalTime&gt;&lt;DepartureCity&gt;Frankfurt&lt;/DepartureCity&gt;&lt;DepartureTime&gt;03:12 PM&lt;/DepartureTime&gt;&lt;FlightNumber&gt;13546&lt;/FlightNumber&gt;&lt;Price&gt;165.6&lt;/Price&gt;&lt;/Flight&gt;&lt;/GetFlightsResult&gt;&lt;/GetFlightsResponse&gt;&lt;/s:Body&gt;&lt;/s:Envelope&gt;</OutputText><HttpStatusCode name="HttpStatusCode">200 : OK</HttpStatusCode><OutputXml name="OutputXml" xml="True" link="True" FileLocation="StServiceCallActivity4_OutputXml_8d40f26c-3ea0-41bc-88a8-9730f13a7a34.xml">&lt;s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"&gt;
+  &lt;s:Body&gt;
+    &lt;GetFlightsResponse xmlns="HP.SOAQ.SampleApp"&gt;
+      &lt;GetFlightsResult xmlns:i="http://www.w3.org/2001/XMLSchema-instance"&gt;
+        &lt;Flight&gt;
+          &lt;Airline&gt;NW&lt;/Airline&gt;
+          &lt;ArrivalCity&gt;Paris&lt;/ArrivalCity&gt;
+          &lt;ArrivalTime&gt;12:41 PM&lt;/ArrivalTime&gt;
+          &lt;DepartureCity&gt;Frankfurt&lt;/DepartureCity&gt;
+          &lt;DepartureTime&gt;10:46 AM&lt;/DepartureTime&gt;
+          &lt;FlightNumber&gt;10638&lt;/FlightNumber&gt;
+          &lt;Price&gt;155.2&lt;/Price&gt;
+        &lt;/Flight&gt;
+        &lt;Flight&gt;
+          &lt;Airline&gt;NW&lt;/Airline&gt;
+          &lt;ArrivalCity&gt;Paris&lt;/ArrivalCity&gt;
+          &lt;ArrivalTime&gt;03:05 PM&lt;/ArrivalTime&gt;
+          &lt;DepartureCity&gt;Frankfurt&lt;/DepartureCity&gt;
+          &lt;DepartureTime&gt;01:10 PM&lt;/DepartureTime&gt;
+          &lt;FlightNumber&gt;13450&lt;/FlightNumber&gt;
+          &lt;Price&gt;148.4&lt;/Price&gt;
+        &lt;/Flight&gt;
+        &lt;Flight&gt;
+          &lt;Airline&gt;SR&lt;/Airline&gt;
+          &lt;ArrivalCity&gt;Paris&lt;/ArrivalCity&gt;
+          &lt;ArrivalTime&gt;11:30 AM&lt;/ArrivalTime&gt;
+          &lt;DepartureCity&gt;Frankfurt&lt;/DepartureCity&gt;
+          &lt;DepartureTime&gt;08:00 AM&lt;/DepartureTime&gt;
+          &lt;FlightNumber&gt;13534&lt;/FlightNumber&gt;
+          &lt;Price&gt;159.9&lt;/Price&gt;
+        &lt;/Flight&gt;
+        &lt;Flight&gt;
+          &lt;Airline&gt;SR&lt;/Airline&gt;
+          &lt;ArrivalCity&gt;Paris&lt;/ArrivalCity&gt;
+          &lt;ArrivalTime&gt;01:54 PM&lt;/ArrivalTime&gt;
+          &lt;DepartureCity&gt;Frankfurt&lt;/DepartureCity&gt;
+          &lt;DepartureTime&gt;10:24 AM&lt;/DepartureTime&gt;
+          &lt;FlightNumber&gt;13538&lt;/FlightNumber&gt;
+          &lt;Price&gt;161&lt;/Price&gt;
+        &lt;/Flight&gt;
+        &lt;Flight&gt;
+          &lt;Airline&gt;SR&lt;/Airline&gt;
+          &lt;ArrivalCity&gt;Paris&lt;/ArrivalCity&gt;
+          &lt;ArrivalTime&gt;04:18 PM&lt;/ArrivalTime&gt;
+          &lt;DepartureCity&gt;Frankfurt&lt;/DepartureCity&gt;
+          &lt;DepartureTime&gt;12:48 PM&lt;/DepartureTime&gt;
+          &lt;FlightNumber&gt;13542&lt;/FlightNumber&gt;
+          &lt;Price&gt;168.4&lt;/Price&gt;
+        &lt;/Flight&gt;
+        &lt;Flight&gt;
+          &lt;Airline&gt;SR&lt;/Airline&gt;
+          &lt;ArrivalCity&gt;Paris&lt;/ArrivalCity&gt;
+          &lt;ArrivalTime&gt;06:42 PM&lt;/ArrivalTime&gt;
+          &lt;DepartureCity&gt;Frankfurt&lt;/DepartureCity&gt;
+          &lt;DepartureTime&gt;03:12 PM&lt;/DepartureTime&gt;
+          &lt;FlightNumber&gt;13546&lt;/FlightNumber&gt;
+          &lt;Price&gt;165.6&lt;/Price&gt;
+        &lt;/Flight&gt;
+      &lt;/GetFlightsResult&gt;
+    &lt;/GetFlightsResponse&gt;
+  &lt;/s:Body&gt;
+&lt;/s:Envelope&gt;</OutputXml><VTD_Message name="Message">Web service call performed successfully</VTD_Message><Name name="Name">'GetFlights'</Name><Comment name="Comment">''</Comment><VTD_Status name="Status">Done</VTD_Status></report>
